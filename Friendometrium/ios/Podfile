@@ -1,6 +1,8 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-
+# add pods for desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
+pod 'Firebase/Database'
 platform :ios, '10.0'
 
 target 'Friendometrium' do
@@ -31,3 +33,4 @@ target 'Friendometrium-tvOS' do
     # Pods for testing
   end
 end
+
